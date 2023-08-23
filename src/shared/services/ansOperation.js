@@ -6,5 +6,8 @@ export const ansoperation={
     },
     getans(){
         return this.answer
+    },
+    initialize(){
+        this.answer.length=0;
     }
 }
