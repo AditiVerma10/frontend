@@ -4,7 +4,9 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { NavLink } from 'react-router-dom';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import { ansoperation } from '../../shared/services/ansOperation';
 export const Home = () => (
+  ansoperation.initialize()
   <div>
     <Header />
     <Box align="center">
