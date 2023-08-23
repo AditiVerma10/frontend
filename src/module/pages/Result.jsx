@@ -19,7 +19,7 @@ const getdata= async (url)=>{
   }
 }
 useEffect( ()=>{
-  const url=`http://localhost:1234/quiz/${param.genere}/${param.level}`
+  const url=`https://quiz-backend-4lf2.onrender.com/quiz/${param.genere}/${param.level}`
   getdata(url);
   
  },[]);
