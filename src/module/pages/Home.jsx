@@ -5,8 +5,9 @@ import Button from '@mui/material/Button';
 import { NavLink } from 'react-router-dom';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import { ansoperation } from '../../shared/services/ansOperation';
-export const Home = () => (
+export const Home = () => {
   ansoperation.initialize()
+    return(
   <div>
     <Header />
     <Box align="center">
@@ -15,4 +16,5 @@ export const Home = () => (
     </Box>
   </div>
 )
+}
 
